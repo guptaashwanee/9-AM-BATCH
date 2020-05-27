@@ -1,0 +1,31 @@
+Fornt-end Ui design / UI development:
+atm app
+GUI(Graphical User Interface)
+UI (User Interface)
+UX(User Experience)
+Web-Development
+
+UI- Technologies:
+HTML- basic DOM structure
+CSS
+JavaScript
+Jquery
+Bootstrap
+
+
+IDLE
+visual studio code
+webstorm (paid)
+atom
+sublime text
+dreamviewer
+notepad++
+
+
+
+style tag
+3 different ways
+
+1 inline style
+2 inpage / internal style
+3 external style
