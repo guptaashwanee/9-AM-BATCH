@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }  
+        table, th, td{
+            border: 2px solid red;
+            border-collapse: collapse;
+            padding: 10px;
+            color: black;
+            /* background-color: orange; */
+            font-size: 18px;
+        }
+        table{
+            background: linear-gradient(45deg, orange, rgb(229, 255, 0), orange);
+            width: 100%;
+            box-shadow: 0 0 10px black;
+            border: 5px solid white;
+        }
+        th{
+            background-color: coral;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!--
+        simple table
+        table row span
+        table col span
+        custom table with css
+    -->
+
+    <h2>SIMPLE TABLE</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>ITEMS</th>
+                <th>PRICE</th>
+                <th>AMOUNT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>LAPTOP</td>
+                <td>30000</td>
+                <td>30000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>DESKTOP</td>
+                <td>20000</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>MOUSE</td>
+                <td>150</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>MONITOR</td>
+                <td>1500</td>
+                <td>3520</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>TABLE WITH COLSPAN</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>ITEMS</th>
+                <th colspan="2">TOTAL AMOUNT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>LAPTOP</td>
+                <td>30000</td>
+                <td>30000</td>
+            </tr>
+            <tr>
+                <td colspan="2">2</td>
+               
+                <td>20000</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>MOUSE</td>
+                <td>150</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td colspan="4">THIS IS COMPLETE MERGED ROW</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>TABLE WITH ROW SPAN</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>ITEMS</th>
+                <th>PRICE</th>
+                <th>AMOUNT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">1</td>
+                <td>LAPTOP</td>
+                <td>30000</td>
+                <td rowspan="2">30000</td>
+            </tr>
+            <tr>
+                <td>DESKTOP</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>MOUSE</td>
+                <td>150</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>MONITOR</td>
+                <td>1500</td>
+                <td>3520</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>CLASS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JOHN</td>
+                <td>2 <sup>nd</sup> year</td>
+            </tr>
+            <tr>
+                <td>JILL</td>
+                <td>3 <sup>rd</sup> year</td>
+            </tr>
+            <tr>
+                <td>JOHN</td>
+                <td>2 <sup>nd</sup> year</td>
+            </tr>
+            <tr>
+                <td>JILL</td>
+                <td>3 <sup>rd</sup> year</td>
+            </tr>
+            <tr>
+                <td>JOHN</td>
+                <td>2 <sup>nd</sup> year</td>
+            </tr>
+            <tr>
+                <td>JILL</td>
+                <td>3 <sup>rd</sup> year</td>
+            </tr>
+            <tr>
+                <td>JOHN</td>
+                <td>2 <sup>nd</sup> year</td>
+            </tr>
+            <tr>
+                <td>JILL</td>
+                <td>3 <sup>rd</sup> year</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
+
+<!--guptaashwanee.github.io-->
