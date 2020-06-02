@@ -1,0 +1,44 @@
+/*First Mini Project*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+table{
+    margin: auto;
+    width: 100%;
+}
+h2{
+    background: linear-gradient(45deg, darkorange, white, green);
+    font-size: 25px;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    border: 5px solid white;
+}
+img, iframe{
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+p{
+    font-size: 16px;
+}
+.heading-1{
+    text-shadow: 0 0 3px black;
+    font-size: 40px;
+}
+.links a{
+    background: linear-gradient(45deg, rgb(1, 63, 63), teal);
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 25px;
+}
