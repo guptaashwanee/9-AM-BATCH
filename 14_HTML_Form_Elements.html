@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin-bottom: 500px;
+        }
+        form{
+            background-color: burlywood;
+            padding: 10px;
+            margin: 10px;
+            width: 400px;
+        }
+        input, label{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        simple Login Form
+        Login Form with Table
+        Select Box
+        Text Area
+        DataList
+    -->
+    <h2>Simple login form</h2>
+    <form>
+        <label>User Name</label>
+        <input type="text">
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <h2>Login form with Table</h2>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>User Name</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login">
+                </td>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Select Box with Options</h2>
+    <form action="">
+        <label for="">Select your Branch</label>
+        <select name="" id="">
+            <option value="">CSE</option>
+            <option value="">EE</option>
+            <option value="">EI</option>
+            <option value="">CE</option>
+            <option value="">IT</option>
+            <option value="">ME</option>
+        </select>
+    </form>
+
+    <h2>Select box with optgroup</h2>
+    <form action="">
+        <label for="">Select a Technology</label>
+        <select name="" id="">
+            <optgroup label="Languages">
+                <option value="">JAVA</option>
+                <option value="">PHP</option>
+                <option value="">.Net</option>
+                <option value="">PYTHON</option>
+            </optgroup>
+            <optgroup label="Scripts">
+                <option value="">JavaScript</option>
+                <option value="">Shell</option>
+            </optgroup>
+            <optgroup label="Development">
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+                <option value="">JS</option>
+                <option value="">Bootstrap</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <h2>Textarea Box</h2>
+    <form action="">
+        <label for="">comments: </label>
+        <textarea name="" id="" cols="50" rows="3" maxlength="10"></textarea>
+    </form>
+
+    <h2>DataList (HTML5)</h2>
+    <form>
+        <label>Select your Branch</label>
+        <input list="branch">
+        <datalist id="branch">
+            <option>CSE</option>
+            <option>EE</option>
+            <option>EI</option>
+            <option>CE</option>
+            <option>IT</option>
+            <option>ME</option>
+        </datalist>
+    </form>
+
+    <form>
+        <label>Your website</label>
+        <input type="url" name="" id="">
+        <input type="submit">
+        <br>
+        <label>Your Email</label>
+        <input type="email" name="" id="">
+        <input type="submit">
+    </form>
+
+
+
+    
+
+
+
+
+<!-- 
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+-->
+
+</body>
+</html>
+
+<!--guptaashwanee.github.io-->
