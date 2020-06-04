@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Types</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin-bottom: 300px;
+        }
+        form{
+            background: linear-gradient(45deg, rgb(255, 194, 81), rgb(255, 255, 73) );
+            padding: 15px;
+            margin: 15px;
+            width: 400px;
+            box-shadow: 0 0 10px black;
+            border: 5px solid white;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Simple Input Types
+        1) Text Box
+        2) Password Box
+        3) Radio Button
+        4) Check Box
+        5) Normal Button
+    -->
+    <h1>HTML Input Types</h1>
+    <!-- input type text -->
+    <h2>Text Box</h2>
+    <form action="">
+        <label for="">User Name</label>
+        <input type="text">
+    </form>
+
+    <!-- input type password -->
+    <h2 id="password">Password Box</h2>
+    <form action="">
+        <label for="">Password</label>
+        <input type="password">
+    </form>
+
+    <!-- input type radio -->
+    <h2>Radio Button</h2>
+    <form action="">
+        <label for="">Today's Climate..?</label>
+        <input type="radio" name="Climate" id="good_climate" value="good">Good
+        <input type="radio" name="Climate" value="bad">Bad
+        <input type="radio" name="Climate" id="" value="normal">Normal
+    </form>
+
+    <!-- input type checkbox -->
+    <h2>check Box</h2>
+    <form action="">
+        <label for="">Select Your Hibbies</label>
+        <input type="checkbox" value="Eating">Eating
+        <input type="checkbox" value="Coading">Coading
+        <input type="checkbox" value="Sleeping">Sleeping
+    </form>
+
+
+    <!-- HTML5 Input Types
+        color,
+        date,
+        datetime-local,
+        email,
+        month,
+        number,
+        range,
+        search,
+        time,
+        url,
+        Week
+    -->
+    <!-- Color -->
+    <h2>Input type Color</h2>
+    <form action="">
+        <label for="">Select a color</label>
+        <input type="color">
+    </form>
+
+    <!-- Date -->
+    <h2>Input type Date</h2>
+    <form action="">
+        <label for="">Selet Your Date of Birth</label>
+        <input type="date">
+    </form>
+
+    <!-- Datetime Local -->
+    <h2>Input Type Datetime Local</h2>
+    <form action="">
+        <label for="">Select a Date & Time</label>
+        <input type="datetime-local">
+    </form>
+
+    <!-- Email -->
+    <h2>Input Type Email</h2>
+    <form action="">
+        <label for="">Enter your Email</label>
+        <input type="email">
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Month -->
+    <h2>Input Type Month</h2>
+    <form action="">
+        <label for="">Select a Month</label>
+        <input type="month">
+    </form>
+
+    <!-- Number -->
+    <h2>Input Type Number</h2>
+    <form action="">
+        <label for="">Enter a Number</label>
+        <input type="number" min="0" max="100" step="0.5">
+    </form>
+
+    <!-- Range -->
+    <h2>Input type Range</h2>
+    <form action="">
+        <label for="">Select a Range</label> 0
+        <input type="range" min="0" max="100" id="input_range">
+        <span id="span">100</span>
+        <button type="button" onclick="alert(document.querySelector('#input_range').value)">value</button>
+    </form>
+
+    <!-- Search -->
+    <h2>Input type Search</h2>
+    <form action="">
+        <label for="">Search Here</label>
+        <input type="search">
+    </form>
+
+    <!-- Time -->
+    <h2>Input type Time</h2>
+    <form action="">
+        <label for="">Select a Time</label>
+        <input type="time">
+    </form>
+
+    <!-- Week -->
+    <h2>Input type week</h2>
+    <form action="">
+        <label for="">Select a week</label>
+        <input type="week">
+    </form>
+
+    <!-- URL -->
+    <h2>Input type Url</h2>
+    <form action="">
+        <label for="">Enter your Website</label>
+        <input type="url">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- File -->
+    <h2>Input type file</h2>
+    <form action="">
+        <label for="">Select a File</label>
+        <input type="file">
+    </form>
+
+    <!-- Range Script -->
+    <script>
+        let range = document.querySelector('#input_range');
+        range.addEventListener('change',function(){
+            document.querySelector('#span').innerText = range.value;
+        });
+    </script>
+
+</body>
+</html>
+
+<!--guptaashwanee.github.io-->
