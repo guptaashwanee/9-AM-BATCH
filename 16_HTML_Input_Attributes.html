@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Attributes</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        form{
+            background: linear-gradient(45deg, rgb(255, 194, 81), rgb(255, 255, 73) );
+            padding: 15px;
+            margin: 15px;
+            width: 400px;
+            box-shadow: 0 0 10px black;
+            border: 5px solid white;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Simple Input Field Attributes
+        value,
+        readonly,
+        disabled,
+        size,
+        rows , cols
+    -->
+    <!-- Input Attribute value -->
+    <h1 align = "center">HTML Input Attributes</h1>
+    <form action="">
+        <label for="">User Name</label>
+        <input type="text" name="" id="" value="Name">
+    </form>
+
+    <!-- Input Attribute readonly -->
+    <form action="">
+        <label for="">User Name</label>
+        <input type="text" name="" id="" value="Ashwaneee" readonly>
+    </form>
+
+    <!-- Input Attribute disabled -->
+    <form action="">
+        <label for="">User Name</label>
+        <input type="text" name="" id="" value="Ashwaneee" disabled>
+        <input type="checkbox" name="" id="">
+        <button type="submit">Enable</button>
+    </form>
+
+
+    <!-- Temp -->
+    <form action="">
+        <label for="">User Name</label>
+        <input type="text" name="" id="" value="Ashwaneee">
+        <br>
+        <label for="">Password</label>
+        <input type="password" name="" id="">
+        <input type="checkbox" name="" id="">
+        <button type="submit">Show Password</button>
+    </form>
+
+    <!-- Input Attribute Maxlength -->
+    <form action="">
+        <label for="">User Name</label>
+        <input type="text" name="" id="" maxlength="20">
+    </form>
+
+    <!-- Input Attribute size -->
+    <form action="">
+        <label for="">User Name</label>
+        <input type="text" name="" id="" size="40">
+    </form>
+
+    <!-- Input Attribute rows and cols -->
+    <form action="">
+        <label for="">Address</label>
+        <textarea name="" id="" cols="50" rows="3"></textarea>
+    </form>
+
+
+    <!--
+        HTML5 Input Field Attributes
+        required,
+        novalidate,
+        autofocus,
+        placeholder,
+        pattern
+    -->
+
+    <h1 align = "center">HTML 5 Input Attributes</h1>
+
+    <!-- Input Attribute required -->
+    <form action="">
+        <label for="">User Name <span style="color: red;">*</span></label>
+        <input type="text" name="" id="" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Input Attribute novalidate -->
+    <form action="" novalidate>
+        <label for="">Enter your Website</label>
+        <input type="url" name="" id="">
+        <input type="submit" name="" id="">
+    </form>
+
+    <!-- Input Attribute autofocous -->
+    <form action="">
+        <label for="">User Name <span style="color: red;">*</span></label>
+        <input type="text" name="" id="" autofocus required placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Input Attribute placeholder -->
+    <form action="">
+        <label for="">User Name <span style="color: red;">*</span></label>
+        <input type="text" name="" id="" placeholder="Enter your Name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Input Attribute pattern -->
+    <form action="">
+        <label for="">Twitter User Name<span style="color: red;">*</span></label>
+        <input type="text" name="" id="" placeholder="Enter your Username" required pattern="^[A-Za-z0-9_]{1,15}$">
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+<br><br><br>
+</body>
+</html>
+
+<!--guptaashwanee.github.io-->
