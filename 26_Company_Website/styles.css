@@ -1,0 +1,93 @@
+/*Third Mini Project*/
+html{
+    scroll-behavior: smooth;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946__340.jpg");
+    background-attachment: fixed;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+/* ---------------Main Heeader------------- */
+header{
+    background-image: url("img/background-2.jpg");
+    color: white;
+    padding: 10px;
+}
+
+/* --------------Main Navigation-------------- */
+nav{
+    background-color: black;
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 25px;
+    display: inline-block;
+}
+nav a:hover{
+    background-color: rgb(54, 54, 54);
+    border-bottom: 2px solid white;
+}
+nav a.active{
+    background-color:  rgb(26, 26, 26);
+}
+
+/* --------------Side Bar---------------- */
+aside{
+    background-image: url("img/background-2.jpg");
+    padding: 10px;
+    width: 250px;
+    float: left;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    position: sticky;
+    top: 0;
+    height: 780px;
+}
+aside a{
+    display: block;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+aside a:hover{
+    border-bottom: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* -----------Section----------------- */
+section{
+    margin-left: 280px;
+    padding: 20px;
+}
+section h2{
+    color: darkred;
+    font-size: 30px;
+    padding-top: 30px;
+}
+section p{
+    font-size: 20px;
+    color: gray;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* --------------Footer Element------------- */
+footer{
+    margin-left: 270px;
+    text-align: center;
+    color: white;
+    background-image: url("img/background-2.jpg");
+    padding: 15px;
+}
+footer a{
+    color: orange;
+
+}
