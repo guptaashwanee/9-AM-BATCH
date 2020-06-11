@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", sans-serif;
+            margin-bottom: 300px;
+        }
+
+        #bg_color {
+            background-color: teal;
+        }
+
+        #bg_image {
+            background-image: url("img/image2.jpg");
+            width: 600px;
+            background-size: cover;
+            text-align: center;
+            box-shadow: 0 0 10px black;
+            border: 3px solid white;
+            padding: 10px;
+        }
+
+        #bg_attachment {
+            width: 800px;
+            height: 800px;
+            box-shadow: 0 0 10px black;
+            border: 3px solid white;
+            background-size: cover;
+            background: red url("img/image4.png") repeat-y fixed center;
+        }
+
+        #bg_position {
+            background-image: url("img/image4.png");
+            width: 600px;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-position: top left;
+            box-shadow: 0 0 10px black;
+            border: 3px solid white;
+            padding: 10px;
+        }
+
+        #ad {
+            width: 100%;
+            height: 200px;
+            text-align: center;
+            box-shadow: 0 0 10px black;
+            border: 3px solid white;
+            padding: 10px;
+            background: white url("img/image2.jpg") no-repeat fixed center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+        Background Color
+        Image
+        Attachment
+        Repeat
+        Position
+        Linear-Gradient
+    -->
+    <!-- Background Color -->
+    <h2 id="bg_color">I am Teal color Background</h2>
+
+    <!-- Background Image -->
+    <h2>Background Image</h2>
+    <div id="bg_image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor voluptatem nemo facere accusamus
+            eligendi, eum fuga nesciunt sequi non perferendis iusto expedita porro! Possimus odit nulla temporibus nihil
+            sunt neque quia, beatae voluptatibus culpa quis nisi mollitia suscipit quos molestias unde aspernatur, eum
+            vero repellendus quaerat? Et maiores architecto a enim delectus, quam sint quisquam, fugiat quo, eos
+            similique ea modi aliquid dicta nesciunt placeat dolore. Vel, architecto quo cupiditate dolorem consectetur
+            repellendus harum aperiam corrupti porro cum, blanditiis quod, impedit optio inventore sint? Minus quibusdam
+            voluptas facere ducimus repellendus enim itaque blanditiis expedita cumque hic, provident doloremque.
+            Quaerat?</p>
+    </div>
+
+    <!-- Background Attachment -->
+    <h2>Background Attachment</h2>
+    <div id="bg_attachment">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor voluptatem nemo facere accusamus
+            eligendi, eum fuga nesciunt sequi non perferendis iusto expedita porro! Possimus odit nulla temporibus nihil
+            sunt neque quia, beatae voluptatibus culpa quis nisi mollitia suscipit quos molestias unde aspernatur, eum
+            vero repellendus quaerat? Et maiores architecto a enim delectus, quam sint quisquam, fugiat quo, eos
+            similique ea modi aliquid dicta nesciunt placeat dolore. Vel, architecto quo cupiditate dolorem consectetur
+            repellendus harum aperiam corrupti porro cum, blanditiis quod, impedit optio inventore sint? Minus quibusdam
+            voluptas facere ducimus repellendus enim itaque blanditiis expedita cumque hic, provident doloremque.
+            Quaerat?</p>
+    </div>
+
+    <!-- Background Position -->
+    <h2>Background Position</h2>
+    <div id="bg_position"></div>
+
+    <br>
+
+    <div id="ad">
+        <h2>Advertisement</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quos velit expedita consequuntur nihil
+            nesciunt veritatis cumque fugit nobis, architecto tenetur perferendis voluptatem recusandae porro.</p>
+    </div>
+
+</body>
+
+</html>
