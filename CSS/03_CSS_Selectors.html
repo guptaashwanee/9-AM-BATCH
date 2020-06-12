@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-bottom: 300px;
+        }
+
+        h2 {
+            color: teal;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            background-color: orangered;
+            color: white;
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+        }
+
+        #blue {
+            background-color: blue;
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            color: white;
+        }
+
+        #orange {
+            background-color: orangered;
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            color: white;
+        }
+
+        .tech1,
+        .tech2 {
+            background-color: yellow;
+            padding: 25px;
+            box-shadow: 0 0 10px black;
+            color: rgb(65, 0, 0);
+            display: inline-block;
+            width: 250px;
+            height: 350px;
+            margin: 25px;
+
+        }
+
+        .tech1 li,
+        .tech2 li {
+            padding: 10px;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            height: 35px;
+        }
+
+        ul li:first-child {
+            background-color: teal;
+        }
+
+        ol li:nth-child(2) {
+            background-color: tomato;
+        }
+
+        ol li:nth-child(even) {
+            background-color: violet;
+        }
+
+        ol li:nth-child(odd) {
+            background-color: sienna;
+        }
+
+        /* .tech2 {
+            background-color: coral;
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            color: rgb(65, 0, 0);
+        } */
+
+        input[type="text"] {
+            background-color: crimson;
+        }
+
+        input[type="text"]:focus {
+            background-color: cyan;
+            outline: none;
+            border: 2px solid rgb(0, 143, 143);
+            box-shadow: 0 0 5px black;
+        }
+
+        input[type="text"]:hover {
+            background-color: yellow;
+            outline: none;
+            border: 2px solid rgb(122, 122, 3);
+            box-shadow: 0 0 5px red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tag Selector -->
+    <h2>This is Tag Selector</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, dolores.</p>
+
+
+    <!-- ID Selector -->
+    <h2>This is ID Selector</h2>
+    <div>
+        <h3 id="blue">Welcome to CSS Concept</h3>
+        <h3 id="orange">Welcome to JS Concept</h3>
+        <h3>Welcome to HTML</h3>
+        <h3>Welcome to Bootstrap</h3>
+    </div>
+
+    <!-- Class Selector -->
+    <h2>This is Class Selector</h2>
+    <ul class="tech1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>Bootstrap</li>
+        <li>JQuery</li>
+        <li>Ajax</li>
+    </ul>
+
+    <ol class="tech2">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>Bootstrap</li>
+        <li>JQuery</li>
+        <li>Ajax</li>
+    </ol>
+
+    <!-- Attribute Selector -->
+    <h2>This is Attribute Selector</h2>
+    <form action="">
+        <input type="text" placeholder="User Name" id="user_name">
+        <br>
+        <input type="Password" placeholder="Password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+
+</html>
