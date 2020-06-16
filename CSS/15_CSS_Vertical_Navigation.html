@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Vertical Navigation</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/8863681502.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        aside {
+            background: linear-gradient(90deg, black, darkred);
+            width: 240px;
+            text-align: center;
+            box-shadow: 0 0 10px black;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            height: 100%;
+            position: fixed;
+            overflow-y: scroll;
+        }
+
+        aside a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+        }
+
+        aside a:hover {
+            background: linear-gradient(45deg, darkred, orangered);
+            border-radius: 50px;
+            box-shadow: 0 0 10px black;
+        }
+
+        .icon {
+            color: white;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside>
+        <i class="fa fa-user-circle-o fa-4x icon" aria-hidden="true"></i>
+        <a href="#"><i class="fa fa-html5"></i> HTML</a>
+        <a href="#"><i class="fa fa-css3"></i> CSS</a>
+        <a href="#"><i class="fab fa-js"></i> JavaScript</a>
+        <a href="#"><i class="fab fa-bootstrap"></i> Bootstrap</a>
+        <a href="#">JQuery</a>
+        <a href="#">AJAX</a>
+        <a href="#">React JS</a>
+        <a href="#"><i class="fab fa-node-js"></i> Node JS</a>
+        <a href="#"><i class="fas fa-database"></i> Mongo DB</a>
+        <a href="#">C Lang</a>
+        <a href="#">C#</a>
+        <a href="#">C++</a>
+        <a href="#"><i class="fab fa-python"></i> Python</a>
+        <a href="#">Go</a>
+    </aside>
+
+
+</body>
+
+</html>
