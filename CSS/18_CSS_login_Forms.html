@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white url("img/image1.jpg") no-repeat scroll bottom;
+        }
+
+        .form-div {
+            width: 250px;
+            text-align: center;
+            margin: 200px auto;
+            background-color: rgba(5, 149, 206, 0.5);
+            box-shadow: 0 0 10px lightblue;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .form-div img {
+            width: 100px;
+            height: 100px;
+            margin-top: -60px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px lightblue;
+        }
+
+        .form-div h2 {
+            color: white;
+            margin: 10px;
+        }
+
+        .inputField {
+            text-align: center;
+            font-size: 18px;
+            height: 35px;
+            width: 200px;
+            border: none;
+            outline: none;
+            margin: 10px;
+            background: transparent;
+            border-bottom: 2px solid lightblue;
+            color: white;
+        }
+
+        .inputField:focus {
+            border-bottom: 2px solid white;
+        }
+
+        ::placeholder {
+            color: lightblue;
+        }
+
+        #login_btn {
+            background-color: #00bbff;
+            color: white;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            margin: 15px;
+            padding: 8px 25px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px black;
+        }
+
+        #login_btn:hover {
+            background-color: #4ccefd;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div animated jackInTheBox infinite">
+        <img src="img/user.png" alt="">
+        <h2 class="animated flash infinite">Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name" class="inputField">
+            <br>
+            <input type="password" placeholder="Password" class="inputField">
+            <br>
+            <input type="submit" value="Login" id="login_btn">
+        </form>
+    </div>
+
+</body>
+
+</html>

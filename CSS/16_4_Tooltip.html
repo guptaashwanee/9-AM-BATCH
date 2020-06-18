@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/hover.css">
+    <script src="https://use.fontawesome.com/8863681502.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            text-align: center;
+            margin-top: 300px;
+        }
+
+        .tooltip {
+            display: inline-block;
+            text-align: center;
+            position: relative;
+        }
+
+        .tooltip_text {
+            background-color: teal;
+            color: white;
+            left: 80px;
+            width: 150px;
+            top: -16px;
+            border-radius: 3px;
+            position: absolute;
+            padding: 2px;
+            z-index: 1;
+            visibility: hidden;
+        }
+
+        .tooltip:hover .tooltip_text {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tooltip">
+        <button class="tooltip_btn"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Hover Me</button>
+        <p class="tooltip_text">You hover on me..?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis nam itaque, atque, sint pariatur
+        aspernatur at dolore sunt qui enim unde voluptatibus exercitationem. Cumque hic perferendis autem commodi.
+        Libero id facere architecto. Soluta ullam esse facere veniam odit illo nobis voluptatem enim, aliquid eveniet.
+        Aperiam, recusandae. Natus debitis qui rem illum nisi iusto blanditiis, dolorum a nobis in sapiente eos maiores,
+        facilis, dolorem eligendi cum. Eligendi, veritatis! Exercitationem voluptatem, dolorem a saepe at excepturi est
+        quam necessitatibus eaque? Commodi labore fugiat maxime omnis at veniam repellat quibusdam voluptas quod quos.
+        Cumque omnis eaque distinctio pariatur repellat id laboriosam minima?</p>
+</body>
+
+</html>
