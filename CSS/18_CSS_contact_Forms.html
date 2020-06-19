@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-image: radial-gradient(circle, #f82348, #ff612b, #ff9200, #fac000, #e2eb12); */
+            background: #833ab4;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .contact-div {
+            /* background: linear-gradient(45deg, teal, lightseagreen); */
+            background: #360033;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0b8793, #360033);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(45deg, #0b8793, #360033);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            width: 250px;
+            padding: 15px;
+            color: white;
+            box-shadow: 0 0 10px lightseagreen;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .contact-div h2 {
+            text-align: center;
+        }
+
+        .contact-div label,
+        input {
+            display: block;
+        }
+
+        .form-group {
+            margin: 5px;
+        }
+
+        input[type='text'],
+        input[type='email'],
+        select {
+            font-size: 18px;
+            outline: none;
+            border: none;
+            width: 230px;
+            height: 30px;
+            margin: 5px 0px;
+        }
+
+        .contact-form textarea {
+            font-size: 18px;
+            outline: none;
+            border: none;
+            width: 230px;
+            margin: 5px 0px;
+        }
+
+        .contact-form input[type='submit'] {
+            /* background: linear-gradient(45deg, lightseagreen, teal); */
+            background: #360033;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #83037c, #0b8793, #360033);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(45deg, #83037c, #0b8793, #360033);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            outline: none;
+            border: none;
+            font-size: 18px;
+            width: 230px;
+            padding: 10px 25px;
+            color: white;
+            box-shadow: 0 0 3px lightseagreen;
+        }
+
+        .contact-form input[type='submit']:hover {
+            cursor: pointer;
+            background: linear-gradient(45deg, teal, lightseagreen);
+
+        }
+
+        option {
+            color: teal;
+        }
+
+        .contact-div:hover {
+            transform: scale(1.05) !important;
+        }
+
+        input[type='text'],
+        input[type='email'],
+        textarea:focus {
+            color: #350134;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Contact Form -->
+    <div class="contact-div animated jello">
+        <h2 class="animated flash infinite"><i class="fas fa-snowflake fa-spin"></i> Contact Us <i
+                class="fas fa-snowflake fa-spin"></i></h2>
+        <form action="" class="contact-form">
+            <div class="form-group">
+                <label for="">NAME</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="">EMAIL</label>
+                <input type="email">
+            </div>
+            <div class="form-group">
+                <label for="">TECH.</label>
+                <select name="" id="">
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="">JS</option>
+                    <option value="">JQUERY</option>
+                    <option value="">BOOTSTRAP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Description</label>
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Contact Us">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
