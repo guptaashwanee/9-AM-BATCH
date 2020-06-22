@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Media Queries</title>
+    <style>
+        h1 {
+            font-family: 'Comic Sans MS', sans-serif;
+            text-align: center;
+            /* color: white; */
+        }
+
+        div {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+
+        p {
+            color: white;
+        }
+
+        h2 {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        /* Mobile Screen */
+        @media (max-width: 500px) {
+            body {
+                background: linear-gradient(45deg, black, yellow);
+            }
+
+            h2:nth-child(1) {
+                display: block;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        /* Tablet Screen */
+        @media (min-width: 501px) and (max-width: 800px) {
+            body {
+                background: linear-gradient(45deg, black, red);
+            }
+
+            h2:nth-child(2) {
+                display: block;
+            }
+
+            p {
+                font-size: 25px;
+            }
+        }
+
+        /* Laptop/Desktop Screen */
+        @media (min-width: 801px) and (max-width: 1200px) {
+            body {
+                background: linear-gradient(45deg, black, blue);
+            }
+
+            h2:nth-child(3) {
+                display: block;
+            }
+
+            p {
+                font-size: 30px;
+            }
+        }
+
+        /* Tablet Screen */
+        @media (min-width: 1201px) {
+            body {
+                background: linear-gradient(45deg, black, orange);
+            }
+
+            h2:nth-child(4) {
+                display: block;
+            }
+
+            p {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Screen Size <span id="screen"></span></h1>
+
+    <div>
+        <h2>Mobile Screen</h2>
+        <h2>Tablet Screen</h2>
+        <h2>Laptop / Desktop Screen</h2>
+        <h2>X-Large Screen</h2>
+
+        <img src="img/image6.jpeg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aspernatur consectetur
+            consequuntur, culpa cumque eligendi, eveniet excepturi illo quia reiciendis repellat ullam. Obcaecati quam
+            sapiente sunt tempore veniam. Cum distinctio exercitationem optio ullam? Alias, cumque dolores eius eligendi
+            enim fuga magni modi obcaecati quasi quisquam reiciendis sit suscipit, unde.</p>
+    </div>
+
+
+
+    <script>
+        window.addEventListener('resize', function () {
+            let screenSize = window.innerWidth;
+            document.querySelector('#screen').innerHTML = `${screenSize}px`;
+        });
+    </script>
+</body>
+
+</html>
