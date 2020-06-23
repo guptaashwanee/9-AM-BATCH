@@ -1,0 +1,54 @@
+body{
+    background-color: darkcyan;
+}
+ul{
+    margin: 200px;
+}
+ul li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 40px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: glow 2s infinite linear;
+}
+@keyframes glow{
+    0%,50%,75%,100%{
+        transform: scale(0.5,0.5);
+    }
+    25%{
+        transform: scale(7,7);
+    }
+}
+ul li:nth-child(1){
+    background-color: purple;
+    box-shadow:0 0 50px purple;
+    animation-delay: 0.1s;
+}
+ul li:nth-child(2){
+    background-color: yellow;
+    box-shadow:0 0 50px yellow;
+    animation-delay: 0.1s;
+}ul li:nth-child(3){
+    background-color: green;
+    box-shadow:0 0 50px green;
+    animation-delay: 0.2s;
+}ul li:nth-child(4){
+    background-color: red;
+    box-shadow:0 0 50px red;
+    animation-delay: 0.3s;
+}ul li:nth-child(5){
+    background-color: blueviolet;
+    box-shadow:0 0 50px blueviolet;
+    animation-delay: 0.4s;
+}ul li:nth-child(6){
+    background-color: orangered;
+    box-shadow:0 0 50px orangered;
+    animation-delay: 0.5s;
+}ul li:nth-child(7){
+    background-color: brown;
+    box-shadow:0 0 50px brown;
+    animation-delay: 0.6s;
+}
