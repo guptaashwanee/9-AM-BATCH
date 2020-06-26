@@ -1,0 +1,264 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Main Header ------------ */
+.main-header{
+    text-align: right;
+    padding: 15px;
+    background: whitesmoke url("../images/image5.jpeg") no-repeat scroll center;
+    color: white;
+}
+
+/* ---------- Main Navbar ------------ */
+.main-nav{
+    background-color: black;
+    padding: 5px;
+    box-shadow: 0 0 5px black;
+}
+.main-nav a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin: 0px 3px;
+}
+.main-nav a:hover{
+    background-color: rgb(145, 54, 38);
+    border-radius: 50px;
+    box-shadow: 0 0 5px white;
+}
+.main-nav a.active{
+    background-color: darkred;
+    border-radius: 50px;
+    box-shadow: 0 0 5px white;
+}
+
+/* ---------- Home News Section ------------ */
+
+.home-news-section{
+    text-align: center;
+    margin: 15px 0px;
+}
+.home-news-article{
+    width: 330px;
+    height: 500px;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid darkred;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: inline-grid;
+    transition: all 0.5s;
+}
+.home-news-article:hover{
+    width: 340px;
+    box-shadow: 0 0 10px darkred;
+    cursor: pointer;
+}
+.home-news-article h2{
+    color: darkred;
+}
+.home-news-article img{
+    width: 100%;
+}
+
+/* ---------- Main News Section ------------ */
+
+.main-news-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.main-news-article{
+    border-radius: 10px;
+    box-shadow: 0 0 10px darkred;
+}
+.main-news-article h2{
+    color: white;
+    background: linear-gradient(45deg, darkred, black, darkred);
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    overflow: hidden;
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.zoom img:hover{
+    transform: scale(1.2,1.2);
+}
+.main-news-article p{
+    color: darkred;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* ---------- Main Footer ------------ */
+
+.main-footer{
+    color: white;
+    background: linear-gradient(45deg, darkred, black, darkred);
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 5px darkred;
+}
+.main-footer a{
+    color: orange;
+}
+
+/* ---------- Gallery Section ------------ */
+
+.gallery-section{
+    text-align: center;
+    margin: 10px;
+}
+.gallery-figure{
+    border: 2px solid darkred;
+    width: 300px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.gallery-figure:hover{
+    box-shadow: 0 0 10px darkred;
+}
+.gallery-zoom{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.gallery-zoom img{
+    width: inherit;
+    height: inherit;
+    transition: all 0.5s;
+}
+.gallery-zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+.gallery-figure figcaption{
+    color: darkred;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* ---------- About-Us Section ------------ */
+.about-section{
+    width: 80%;
+    margin: auto;
+}
+.about-article{
+    background: white url('../images/gallery_mobile_3.jpg') repeat scroll top;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 0 10px blue;
+}
+.company-images{
+    text-align: center;
+}
+.company-image-zoom{
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 5px;
+    box-shadow: 0 0 10px black;
+}
+.company-image-zoom img{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 5px black;
+    width: inherit;
+    height: inherit;
+    transition: all 0.5s;
+}
+.company-image-zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+
+
+/* ---------- Contact Section ------------ */
+
+.contact-section{
+    background: white url('../images/image5.jpeg') no-repeat scroll bottom;
+    padding: 15px;
+}
+.contact-article{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 275px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 10px #eccfaa;
+    border-radius: 10px;
+    margin-top: 0;
+}
+.contact-article h2{
+    color: #c2a887;
+    padding-top: 25px;
+}
+.contact-form .inputField{
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 35px;
+    font-size: 18px;
+    width: 225px;
+    margin: 5px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 3px solid #7f6c5a;
+}
+.contact-form .inputField:focus{
+    border-bottom: 3px solid #eccfaa;
+}
+::placeholder{
+    color: #9e886c;
+}
+.contact-form textarea{
+    border: none;
+    outline: none;
+    background-color: rgba(48, 41, 32, 0.5);
+    color: white;
+    font-size: 18px;
+    width: 200px;
+    border: 3px solid #7f6c5a;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.contact-form textarea:focus{
+    border: 3px solid #eccfaa;
+}
+.contact-form #submit-btn{
+    background-color: #7f6c5a;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+    margin: 15px;
+}
+.contact-form #submit-btn:hover{
+    box-shadow: 0 0 5px #fae4c7;
+    cursor: pointer;
+}
